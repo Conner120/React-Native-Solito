@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "1be563af-bff2-45c7-88af-b4ad61eba88c"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "rocks.conner.expo-router"
+    }
+  }
+}
