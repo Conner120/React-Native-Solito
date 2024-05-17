@@ -9,7 +9,7 @@
       "android"
     ],
     "ios": {
-      "bundleIdentifier": "com.solito.expo-router"
+      "bundleIdentifier": "rocks.conner.expo-router"
     },
     "plugins": [
       "expo-router"
