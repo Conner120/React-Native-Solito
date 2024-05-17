@@ -80,10 +80,10 @@ function PinInput({
             borderBottomWidth="$2"
             onChangeText={(text: string) => {
               if (text.length === 1 && index < 5) {
-                refList[index + 1].current?.focus()
+                refList[index + 1]?.current?.focus()
                 setInputFocus(index + 1)
               } else if (text.length === 0 && index > 0) {
-                refList[index - 1].current?.focus()
+                refList[index - 1]?.current?.focus()
               }
 
               const updateOtpAtIndex = (index: number, value: string) => {
@@ -198,20 +198,22 @@ function AccountLink() {
       alignItems="center"
       justifyContent="center"
     >
-      <Text
-        color="$textLight800"
-        sx={{
-          _dark: {
-            color: '$textDark400',
-          },
-        }}
-        fontSize="$sm"
-      >
-        Already have an account?
-      </Text>
-      <Link href="/login">
-        <LinkText fontSize="$sm">Sign In</LinkText>
-      </Link>
+      <>
+        <Text
+          color="$textLight800"
+          sx={{
+            _dark: {
+              color: '$textDark400',
+            },
+          }}
+          fontSize="$sm"
+        >
+          Already have an account?
+        </Text>
+        <Link href="/login">
+          <LinkText fontSize="$sm">Sign In</LinkText>
+        </Link>
+      </>
     </HStack>
   )
 }
@@ -227,7 +229,7 @@ function ResendLink() {
         }}
         fontSize="$sm"
       >
-        Didn't receive the OTP?{' '}
+        Didn{"'"}t receive the OTP?
       </Text>
       <Link href="#">
         <LinkText fontSize="$sm">RESEND OTP</LinkText>

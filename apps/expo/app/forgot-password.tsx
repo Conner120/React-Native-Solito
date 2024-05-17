@@ -1,5 +1,5 @@
 import ForgotPasswordScreen from '@gluestack/app/Login/ForgotPassword'
 
-export default () => {
+export default function ForgotPassword() {
   return <ForgotPasswordScreen />
 }

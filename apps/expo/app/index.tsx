@@ -1,6 +1,8 @@
 // index app
 import SplashScreen from '@gluestack/app/Login/SplashScreen'
 
-export default () => {
+const App = () => {
   return <SplashScreen />
 }
+
+export default App
