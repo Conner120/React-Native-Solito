@@ -1,3 +1,4 @@
+import React from 'react'
 import { Stack } from 'expo-router'
 import { Provider } from 'app/provider'
 import { StatusBar } from 'expo-status-bar'

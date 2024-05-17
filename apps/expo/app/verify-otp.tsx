@@ -1,3 +1,4 @@
+import React from 'react'
 import OtpVerificationScreen from '@gluestack/app/Login/OtpVerification'
 
 const OtpVerification = () => {

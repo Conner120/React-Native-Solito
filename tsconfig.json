@@ -4,7 +4,8 @@
     "noUncheckedIndexedAccess": true,
     "paths": {
       "@gluestack/app/*": ["./packages/app/screens/*"]
-    }
+    },
+    "jsx": "react"
   },
   "extends": "expo/tsconfig.base"
 }
