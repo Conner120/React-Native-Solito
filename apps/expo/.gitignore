@@ -18,6 +18,7 @@ xcuserdata
 *.moved-aside
 DerivedData
 *.hmap
+coverage/
 *.ipa
 *.xcuserstate
 project.xcworkspace

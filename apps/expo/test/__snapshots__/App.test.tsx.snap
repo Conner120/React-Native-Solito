@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<App /> has 1 child 1`] = `
+exports[`<Card /> has 1 child 1`] = `
 <RCTScrollView
   data-style=""
   dataSet={
@@ -65,7 +65,7 @@ exports[`<App /> has 1 child 1`] = `
         size="md"
         source={
           {
-            "uri": "https://images.unsplash.com/photo-1595231712325-9fedecef7575?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D",
+            "uri": "https://assets.basspro.com/image/upload/c_limit,dpr_2.0,f_auto,h_250,q_auto,w_400/c_limit,h_250,w_400/v1/ProductImages/200/master1_100990553_main?pgw=1",
           }
         }
         style={
@@ -90,10 +90,21 @@ exports[`<App /> has 1 child 1`] = `
             },
             undefined,
             {
-              "borderRadius": 6,
               "height": 240,
               "marginBottom": 24,
+            },
+            undefined,
+            undefined,
+            {
+              "borderRadius": 12,
               "width": "100%",
+            },
+            undefined,
+            {},
+            undefined,
+            {
+              "height": 240,
+              "marginBottom": 24,
             },
             undefined,
             undefined,
@@ -101,10 +112,8 @@ exports[`<App /> has 1 child 1`] = `
         }
         sx={
           {
-            "borderRadius": "$md",
             "h": 240,
             "mb": "$6",
-            "width": "$full",
           }
         }
       />
@@ -407,7 +416,6 @@ exports[`<App /> has 1 child 1`] = `
               {},
               undefined,
               {
-                "fontFamily": undefined,
                 "marginBottom": 12,
                 "marginRight": 0,
                 "paddingHorizontal": 16,
@@ -430,7 +438,6 @@ exports[`<App /> has 1 child 1`] = `
                 "mb": "$0",
                 "mr": "$3",
               },
-              "fontFamily": "$heading",
               "mb": "$3",
               "mr": "$0",
               "px": "$4",
@@ -611,7 +618,6 @@ exports[`<App /> has 1 child 1`] = `
               undefined,
               {
                 "borderColor": "#D4D4D4",
-                "fontFamily": undefined,
                 "paddingHorizontal": 16,
                 "paddingVertical": 8,
               },
@@ -632,7 +638,6 @@ exports[`<App /> has 1 child 1`] = `
                 "borderColor": "$backgroundDark600",
               },
               "borderColor": "$borderLight300",
-              "fontFamily": "$heading",
               "px": "$4",
               "py": "$2",
             }
@@ -828,7 +833,19 @@ exports[`<App /> has 1 child 1`] = `
             {
               "height": 240,
               "marginBottom": 24,
+            },
+            undefined,
+            undefined,
+            {
+              "borderRadius": 12,
               "width": "100%",
+            },
+            undefined,
+            {},
+            undefined,
+            {
+              "height": 240,
+              "marginBottom": 24,
             },
             undefined,
             undefined,
@@ -838,7 +855,6 @@ exports[`<App /> has 1 child 1`] = `
           {
             "h": 240,
             "mb": "$6",
-            "w": "$full",
           }
         }
       />
@@ -1093,7 +1109,6 @@ exports[`<App /> has 1 child 1`] = `
               {},
               undefined,
               {
-                "fontFamily": undefined,
                 "marginBottom": 12,
                 "marginRight": 0,
                 "paddingHorizontal": 16,
@@ -1116,7 +1131,6 @@ exports[`<App /> has 1 child 1`] = `
                 "mb": "$0",
                 "mr": "$3",
               },
-              "fontFamily": "$heading",
               "mb": "$3",
               "mr": "$0",
               "px": "$4",
