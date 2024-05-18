@@ -1,5 +1,5 @@
-import { config as defaultConfig } from '@gluestack-ui/config'
-import { createConfig } from '@gluestack-ui/themed'
+import { config as defaultConfig } from '@gluestack-ui/config';
+import { createConfig } from '@gluestack-ui/themed';
 
 const config = createConfig({
   ...defaultConfig,
@@ -228,15 +228,15 @@ const config = createConfig({
       ...defaultConfig.tokens.opacity,
     },
   },
-} as const)
+} as const);
 
-export { config }
+export { config };
 
 // Get the type of Config
-type ConfigType = typeof config
+type ConfigType = typeof config;
 
 // Extend the internal styled config
-type Components = typeof defaultConfig.components
+type Components = typeof defaultConfig.components;
 // Extend the internal styled config
 declare module '@gluestack-style/react' {
   // interface UIConfig extends ConfigType {}

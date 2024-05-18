@@ -387,7 +387,7 @@ const Main = () => {
             fontSize="$sm"
             sx={{ _dark: { color: '$textDark400' } }}
           >
-            Don't have an account?
+            Don{"'"}t have an account?
           </Text>
           <Link href="/signup">
             <LinkText fontSize="$sm">Sign up</LinkText>

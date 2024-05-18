@@ -1,5 +1,4 @@
-import React from 'react'
-import { View } from 'react-native'
+import React from 'react';
 import {
   Card,
   Text,
@@ -10,11 +9,10 @@ import {
   Box,
   ScrollView,
   Image,
-  HStack,
   Divider,
-  Pressable,
-} from '@gluestack-ui/themed'
-import { Link } from 'solito/link'
+} from '@gluestack-ui/themed';
+
+import { Link } from 'solito/link';
 
 const Robots = () => {
   return (
@@ -107,10 +105,10 @@ const Robots = () => {
       <Card p="$5" borderRadius="$lg">
         <Image
           mb="$6"
+          w="$full"
           h={240}
-          width="$full"
+          br="$br"
           alt="Fashion Clothing"
-          borderRadius="$md"
           source={{
             uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTadAT3b7O5jQXTF3_kwKkeiJ78P4N5AiU3yg&s',
           }}
@@ -164,7 +162,7 @@ const Robots = () => {
         </Box>
       </Card>
     </ScrollView>
-  )
-}
+  );
+};
 
-export default Robots
+export default Robots;

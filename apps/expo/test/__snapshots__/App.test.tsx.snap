@@ -1,0 +1,1196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> has 1 child 1`] = `
+<RCTScrollView
+  data-style=""
+  dataSet={
+    {
+      "style": "",
+    }
+  }
+  style={
+    [
+      undefined,
+      {},
+      undefined,
+      {},
+      undefined,
+      {},
+      undefined,
+      undefined,
+    ]
+  }
+  sx={{}}
+>
+  <View>
+    <View
+      data-style=""
+      dataSet={
+        {
+          "style": "",
+        }
+      }
+      style={
+        [
+          undefined,
+          {},
+          undefined,
+          {},
+          undefined,
+          {
+            "borderRadius": 8,
+            "padding": 20,
+          },
+          undefined,
+          undefined,
+        ]
+      }
+      sx={
+        {
+          "borderRadius": "$lg",
+          "p": "$5",
+        }
+      }
+    >
+      <Image
+        alt="Fashion Clothing"
+        aria-label="Fashion Clothing"
+        data-style=""
+        dataSet={
+          {
+            "style": "",
+          }
+        }
+        role="img"
+        size="md"
+        source={
+          {
+            "uri": "https://images.unsplash.com/photo-1595231712325-9fedecef7575?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D",
+          }
+        }
+        style={
+          [
+            undefined,
+            {},
+            undefined,
+            {
+              "maxWidth": "100%",
+            },
+            undefined,
+            {},
+            undefined,
+            {
+              "height": 80,
+              "width": 80,
+            },
+            undefined,
+            {
+              "height": 80,
+              "width": 80,
+            },
+            undefined,
+            {
+              "borderRadius": 6,
+              "height": 240,
+              "marginBottom": 24,
+              "width": "100%",
+            },
+            undefined,
+            undefined,
+          ]
+        }
+        sx={
+          {
+            "borderRadius": "$md",
+            "h": 240,
+            "mb": "$6",
+            "width": "$full",
+          }
+        }
+      />
+      <Text
+        data-style=""
+        dataSet={
+          {
+            "style": "",
+          }
+        }
+        size="md"
+        style={
+          [
+            undefined,
+            {},
+            undefined,
+            {
+              "color": "#525252",
+              "fontFamily": undefined,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "letterSpacing": 0,
+            },
+            undefined,
+            {},
+            undefined,
+            {
+              "fontSize": 16,
+              "lineHeight": 22,
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "lineHeight": 22,
+            },
+            undefined,
+            {
+              "color": "#525252",
+              "fontFamily": undefined,
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "lineHeight": 20,
+              "marginBottom": 8,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+        sx={
+          {
+            "_dark": {
+              "color": "$textDark200",
+            },
+            "color": "$textLight700",
+            "fontFamily": "$heading",
+            "fontSize": "$sm",
+            "fontStyle": "normal",
+            "fontWeight": "$normal",
+            "lineHeight": "$sm",
+            "mb": "$2",
+          }
+        }
+      >
+        Fashion Clothing
+      </Text>
+      <View
+        data-style=""
+        dataSet={
+          {
+            "style": "",
+          }
+        }
+        style={
+          [
+            undefined,
+            {},
+            undefined,
+            {
+              "flexDirection": "column",
+            },
+            undefined,
+            {},
+            undefined,
+            {
+              "marginBottom": 24,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+        sx={
+          {
+            "mb": "$6",
+          }
+        }
+      >
+        <Text
+          accessibilityRole="header"
+          data-style=""
+          dataSet={
+            {
+              "style": "",
+            }
+          }
+          style={
+            {
+              "color": "#262626",
+              "fontFamily": undefined,
+              "fontSize": 18,
+              "fontWeight": "700",
+              "letterSpacing": -0.2,
+              "lineHeight": 24,
+              "marginBottom": 16,
+              "marginVertical": 0,
+            }
+          }
+        >
+          Cotton Kurta
+        </Text>
+        <Text
+          data-style=""
+          dataSet={
+            {
+              "style": "",
+            }
+          }
+          size="sm"
+          style={
+            [
+              undefined,
+              {},
+              undefined,
+              {
+                "color": "#525252",
+                "fontFamily": undefined,
+                "fontStyle": "normal",
+                "fontWeight": "400",
+                "letterSpacing": 0,
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              undefined,
+              {
+                "fontSize": 14,
+                "lineHeight": 20,
+              },
+              undefined,
+              {
+                "fontFamily": undefined,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+          sx={
+            {
+              "fontFamily": "$heading",
+            }
+          }
+        >
+          Floral embroidered notch neck thread work cotton kurta in white and black.
+        </Text>
+      </View>
+      <View
+        data-style=""
+        dataSet={
+          {
+            "style": "",
+          }
+        }
+        style={
+          [
+            undefined,
+            {},
+            undefined,
+            {},
+            undefined,
+            {},
+            undefined,
+            {
+              "flexDirection": "column",
+            },
+            undefined,
+            {
+              "flexDirection": "row",
+            },
+            undefined,
+            undefined,
+          ]
+        }
+        sx={
+          {
+            "@sm": {
+              "flexDirection": "row",
+            },
+            "flexDirection": "column",
+          }
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          action="primary"
+          collapsable={false}
+          data-style=""
+          dataSet={
+            {
+              "active": "false",
+              "disabled": "false",
+              "focus": "false",
+              "focusVisible": "false",
+              "hover": "false",
+              "style": "",
+            }
+          }
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          role="button"
+          size="md"
+          states={
+            {
+              "active": false,
+              "disabled": undefined,
+              "focus": false,
+              "focusVisible": false,
+              "hover": false,
+            }
+          }
+          style={
+            [
+              undefined,
+              {},
+              undefined,
+              {
+                "alignItems": "center",
+                "backgroundColor": "#0077E6",
+                "borderRadius": 4,
+                "flexDirection": "row",
+                "justifyContent": "center",
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "backgroundColor": "#0077E6",
+                "borderColor": "#4AA9FF",
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "height": 40,
+                "paddingHorizontal": 20,
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "backgroundColor": "#0077E6",
+                "borderColor": "#4AA9FF",
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "height": 40,
+                "paddingHorizontal": 20,
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "fontFamily": undefined,
+                "marginBottom": 12,
+                "marginRight": 0,
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+              },
+              undefined,
+              {
+                "flex": 1,
+                "marginBottom": 0,
+                "marginRight": 12,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+          sx={
+            {
+              "@sm": {
+                "flex": 1,
+                "mb": "$0",
+                "mr": "$3",
+              },
+              "fontFamily": "$heading",
+              "mb": "$3",
+              "mr": "$0",
+              "px": "$4",
+              "py": "$2",
+            }
+          }
+          variant="solid"
+        >
+          <Text
+            data-style=""
+            dataSet={
+              {
+                "style": "",
+              }
+            }
+            size="sm"
+            style={
+              [
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#525252",
+                  "fontFamily": undefined,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                undefined,
+                {},
+                undefined,
+                {
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                },
+                undefined,
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#FCFCFC",
+                },
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#FCFCFC",
+                  "fontWeight": "600",
+                },
+                undefined,
+                {
+                  "color": "#005DB4",
+                },
+                undefined,
+                {
+                  "color": "#FCFCFC",
+                },
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#FCFCFC",
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            sx={{}}
+          >
+            Add to cart
+          </Text>
+        </View>
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          action="primary"
+          collapsable={false}
+          data-style=""
+          dataSet={
+            {
+              "active": "false",
+              "disabled": "false",
+              "focus": "false",
+              "focusVisible": "false",
+              "hover": "false",
+              "style": "",
+            }
+          }
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          role="button"
+          size="md"
+          states={
+            {
+              "active": false,
+              "disabled": undefined,
+              "focus": false,
+              "focusVisible": false,
+              "hover": false,
+            }
+          }
+          style={
+            [
+              undefined,
+              {},
+              undefined,
+              {
+                "alignItems": "center",
+                "backgroundColor": "#0077E6",
+                "borderRadius": 4,
+                "flexDirection": "row",
+                "justifyContent": "center",
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "backgroundColor": "#0077E6",
+                "borderColor": "#4AA9FF",
+              },
+              undefined,
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 1,
+              },
+              undefined,
+              {
+                "height": 40,
+                "paddingHorizontal": 20,
+              },
+              undefined,
+              {
+                "backgroundColor": "transparent",
+              },
+              undefined,
+              {
+                "backgroundColor": "#0077E6",
+                "borderColor": "#4AA9FF",
+              },
+              undefined,
+              {
+                "backgroundColor": "transparent",
+                "borderWidth": 1,
+              },
+              undefined,
+              {
+                "height": 40,
+                "paddingHorizontal": 20,
+              },
+              undefined,
+              {
+                "backgroundColor": "transparent",
+              },
+              undefined,
+              {
+                "borderColor": "#D4D4D4",
+                "fontFamily": undefined,
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+              },
+              undefined,
+              {
+                "flex": 1,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+          sx={
+            {
+              "@sm": {
+                "flex": 1,
+              },
+              "_dark": {
+                "borderColor": "$backgroundDark600",
+              },
+              "borderColor": "$borderLight300",
+              "fontFamily": "$heading",
+              "px": "$4",
+              "py": "$2",
+            }
+          }
+          variant="outline"
+        >
+          <Text
+            data-style=""
+            dataSet={
+              {
+                "style": "",
+              }
+            }
+            size="sm"
+            style={
+              [
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#525252",
+                  "fontFamily": undefined,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                undefined,
+                {},
+                undefined,
+                {
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                },
+                undefined,
+                {
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                },
+                undefined,
+                {
+                  "color": "#737373",
+                },
+                undefined,
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#FCFCFC",
+                },
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#FCFCFC",
+                  "fontWeight": "600",
+                },
+                undefined,
+                {
+                  "color": "#005DB4",
+                },
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#737373",
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            sx={
+              {
+                "_dark": {
+                  "color": "$textDark400",
+                },
+                "color": "$textLight600",
+              }
+            }
+          >
+            Wishlist
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      data-style=""
+      dataSet={
+        {
+          "style": "",
+        }
+      }
+      orientation="horizontal"
+      style={
+        [
+          undefined,
+          {},
+          undefined,
+          {
+            "backgroundColor": "#DBDBDB",
+          },
+          undefined,
+          {},
+          undefined,
+          {
+            "height": 1,
+            "width": "100%",
+          },
+          undefined,
+          {
+            "height": 1,
+            "width": "100%",
+          },
+          undefined,
+          {
+            "marginVertical": 0,
+          },
+          undefined,
+          undefined,
+        ]
+      }
+      sx={
+        {
+          "my": 0,
+        }
+      }
+    />
+    <View
+      data-style=""
+      dataSet={
+        {
+          "style": "",
+        }
+      }
+      style={
+        [
+          undefined,
+          {},
+          undefined,
+          {},
+          undefined,
+          {
+            "borderRadius": 8,
+            "padding": 20,
+          },
+          undefined,
+          undefined,
+        ]
+      }
+      sx={
+        {
+          "borderRadius": "$lg",
+          "p": "$5",
+        }
+      }
+    >
+      <Image
+        alt="Fashion Clothing"
+        aria-label="Fashion Clothing"
+        data-style=""
+        dataSet={
+          {
+            "style": "",
+          }
+        }
+        role="img"
+        size="md"
+        source={
+          {
+            "uri": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTadAT3b7O5jQXTF3_kwKkeiJ78P4N5AiU3yg&s",
+          }
+        }
+        style={
+          [
+            undefined,
+            {},
+            undefined,
+            {
+              "maxWidth": "100%",
+            },
+            undefined,
+            {},
+            undefined,
+            {
+              "height": 80,
+              "width": 80,
+            },
+            undefined,
+            {
+              "height": 80,
+              "width": 80,
+            },
+            undefined,
+            {
+              "height": 240,
+              "marginBottom": 24,
+              "width": "100%",
+            },
+            undefined,
+            undefined,
+          ]
+        }
+        sx={
+          {
+            "h": 240,
+            "mb": "$6",
+            "w": "$full",
+          }
+        }
+      />
+      <Text
+        data-style=""
+        dataSet={
+          {
+            "style": "",
+          }
+        }
+        size="md"
+        style={
+          [
+            undefined,
+            {},
+            undefined,
+            {
+              "color": "#525252",
+              "fontFamily": undefined,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "letterSpacing": 0,
+            },
+            undefined,
+            {},
+            undefined,
+            {
+              "fontSize": 16,
+              "lineHeight": 22,
+            },
+            undefined,
+            {
+              "fontSize": 16,
+              "lineHeight": 22,
+            },
+            undefined,
+            {
+              "color": "#525252",
+              "fontFamily": undefined,
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "lineHeight": 20,
+              "marginBottom": 8,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+        sx={
+          {
+            "_dark": {
+              "color": "$textDark200",
+            },
+            "color": "$textLight700",
+            "fontFamily": "$heading",
+            "fontSize": "$sm",
+            "fontStyle": "normal",
+            "fontWeight": "$normal",
+            "lineHeight": "$sm",
+            "mb": "$2",
+          }
+        }
+      >
+        Fargo, ND
+      </Text>
+      <View
+        data-style=""
+        dataSet={
+          {
+            "style": "",
+          }
+        }
+        style={
+          [
+            undefined,
+            {},
+            undefined,
+            {
+              "flexDirection": "column",
+            },
+            undefined,
+            {},
+            undefined,
+            {
+              "marginBottom": 24,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+        sx={
+          {
+            "mb": "$6",
+          }
+        }
+      >
+        <Text
+          accessibilityRole="header"
+          data-style=""
+          dataSet={
+            {
+              "style": "",
+            }
+          }
+          style={
+            {
+              "color": "#262626",
+              "fontFamily": undefined,
+              "fontSize": 18,
+              "fontWeight": "700",
+              "letterSpacing": -0.2,
+              "lineHeight": 24,
+              "marginBottom": 16,
+              "marginVertical": 0,
+            }
+          }
+        >
+          Bobs Family Farm
+        </Text>
+      </View>
+      <View
+        data-style=""
+        dataSet={
+          {
+            "style": "",
+          }
+        }
+        style={
+          [
+            undefined,
+            {},
+            undefined,
+            {},
+            undefined,
+            {},
+            undefined,
+            {
+              "flexDirection": "column",
+            },
+            undefined,
+            {
+              "flexDirection": "row",
+            },
+            undefined,
+            undefined,
+          ]
+        }
+        sx={
+          {
+            "@sm": {
+              "flexDirection": "row",
+            },
+            "flexDirection": "column",
+          }
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          action="primary"
+          collapsable={false}
+          data-style=""
+          dataSet={
+            {
+              "active": "false",
+              "disabled": "false",
+              "focus": "false",
+              "focusVisible": "false",
+              "hover": "false",
+              "style": "",
+            }
+          }
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          role="button"
+          size="md"
+          states={
+            {
+              "active": false,
+              "disabled": undefined,
+              "focus": false,
+              "focusVisible": false,
+              "hover": false,
+            }
+          }
+          style={
+            [
+              undefined,
+              {},
+              undefined,
+              {
+                "alignItems": "center",
+                "backgroundColor": "#0077E6",
+                "borderRadius": 4,
+                "flexDirection": "row",
+                "justifyContent": "center",
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "backgroundColor": "#0077E6",
+                "borderColor": "#4AA9FF",
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "height": 40,
+                "paddingHorizontal": 20,
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "backgroundColor": "#0077E6",
+                "borderColor": "#4AA9FF",
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "height": 40,
+                "paddingHorizontal": 20,
+              },
+              undefined,
+              {},
+              undefined,
+              {
+                "fontFamily": undefined,
+                "marginBottom": 12,
+                "marginRight": 0,
+                "paddingHorizontal": 16,
+                "paddingVertical": 8,
+              },
+              undefined,
+              {
+                "flex": 1,
+                "marginBottom": 0,
+                "marginRight": 12,
+              },
+              undefined,
+              undefined,
+            ]
+          }
+          sx={
+            {
+              "@sm": {
+                "flex": 1,
+                "mb": "$0",
+                "mr": "$3",
+              },
+              "fontFamily": "$heading",
+              "mb": "$3",
+              "mr": "$0",
+              "px": "$4",
+              "py": "$2",
+            }
+          }
+          variant="solid"
+        >
+          <Text
+            data-style=""
+            dataSet={
+              {
+                "style": "",
+              }
+            }
+            size="sm"
+            style={
+              [
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#525252",
+                  "fontFamily": undefined,
+                  "fontStyle": "normal",
+                  "fontWeight": "400",
+                  "letterSpacing": 0,
+                },
+                undefined,
+                {},
+                undefined,
+                {
+                  "fontSize": 14,
+                  "lineHeight": 20,
+                },
+                undefined,
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#FCFCFC",
+                },
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#FCFCFC",
+                  "fontWeight": "600",
+                },
+                undefined,
+                {
+                  "color": "#005DB4",
+                },
+                undefined,
+                {
+                  "color": "#FCFCFC",
+                },
+                undefined,
+                {},
+                undefined,
+                {
+                  "color": "#FCFCFC",
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            sx={{}}
+          >
+            Start Robot Manager
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

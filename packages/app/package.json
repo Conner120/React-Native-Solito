@@ -3,10 +3,13 @@
   "name": "app",
   "main": "index.ts",
   "dependencies": {
+    "@gluestack-style/react": "^1.0.56",
+    "@gluestack-ui/themed": "^1.1.26",
     "@hookform/resolvers": "^3.3.2",
     "lucide-react-native": "^0.291.0",
     "moti": "latest",
     "react-hook-form": "^7.47.0",
+    "react-native-svg": "13.4.0",
     "solito": "4.0.1"
   },
   "sideEffects": false
