@@ -10,20 +10,27 @@ import {
   ScrollView,
   Image,
   Divider,
+  styled,
 } from '@gluestack-ui/themed';
+import { componentsConfig } from '@gluestack-ui/config';
 
-import { Link } from 'solito/link';
-
+const StyledImage = styled(
+  Image,
+  {
+    width: '$full',
+    borderRadius: '$xl',
+  },
+  componentsConfig.Image.componentConfig,
+  {}
+);
 const Robots = () => {
   return (
     <ScrollView>
       <Card p="$5" borderRadius="$lg">
-        <Image
+        <StyledImage
           mb="$6"
           h={240}
-          width="$full"
           alt="Fashion Clothing"
-          borderRadius="$md"
           source={{
             uri: 'https://images.unsplash.com/photo-1595231712325-9fedecef7575?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D',
           }}
@@ -103,11 +110,9 @@ const Robots = () => {
       </Card>
       <Divider my={0} />
       <Card p="$5" borderRadius="$lg">
-        <Image
+        <StyledImage
           mb="$6"
-          w="$full"
           h={240}
-          br="$br"
           alt="Fashion Clothing"
           source={{
             uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTadAT3b7O5jQXTF3_kwKkeiJ78P4N5AiU3yg&s',
