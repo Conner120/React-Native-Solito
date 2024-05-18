@@ -26,7 +26,7 @@ function ActionButtons() {
         },
       }}
     >
-      <Button
+      {/* <Button
         sx={{
           ':hover': {
             bg: '$backgroundLight100',
@@ -63,7 +63,7 @@ function ActionButtons() {
         <ButtonText textDecorationLine="none" color="$textLight50">
           SIGN UP
         </ButtonText>
-      </Button>
+      </Button> */}
       <Button
         sx={{
           ':hover': {
@@ -75,7 +75,7 @@ function ActionButtons() {
         }}
         size="md"
         variant="outline"
-        onPress={() => router.push('/dashboard')}
+        onPress={() => router.push('/dashboards/')}
         borderColor="$borderLight0"
       >
         <ButtonText textDecorationLine="none" color="$textLight50">

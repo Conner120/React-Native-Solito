@@ -4,7 +4,7 @@ import { renderRouter, screen } from 'expo-router/testing-library';
 import App from '../app';
 import { Provider } from 'app/provider';
 import { SafeArea } from 'app/provider/safe-area';
-import Robots from '@gluestack/app/Dashboard/Robots';
+import Card from '@gluestack/app/Dashboard/Robots';
 
 it('my-test', async () => {
   const MockComponent = jest.fn(() => (
@@ -31,7 +31,7 @@ describe('<App />', () => {
   it('has 1 child', () => {
     const tree = renderer.create(
       <Provider>
-        <Robots />
+        <Card />
       </Provider>
     );
     expect(tree).toMatchSnapshot();

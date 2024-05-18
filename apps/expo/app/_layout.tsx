@@ -1,7 +1,7 @@
-import React from 'react'
-import { Stack } from 'expo-router'
-import { Provider } from 'app/provider'
-import { StatusBar } from 'expo-status-bar'
+import React from 'react';
+import { Stack } from 'expo-router';
+import { Provider } from 'app/provider';
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   return (
@@ -17,5 +17,5 @@ export default function App() {
         <Stack.Screen name="create-password" options={{ headerShown: false }} />
       </Stack>
     </Provider>
-  )
+  );
 }

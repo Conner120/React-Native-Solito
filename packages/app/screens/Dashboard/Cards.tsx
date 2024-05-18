@@ -23,7 +23,7 @@ const StyledImage = styled(
   componentsConfig.Image.componentConfig,
   {}
 );
-const Robots = () => {
+const Cards = () => {
   return (
     <ScrollView>
       <Card p="$5" borderRadius="$lg">
@@ -32,7 +32,7 @@ const Robots = () => {
           h={240}
           alt="Fashion Clothing"
           source={{
-            uri: 'https://images.unsplash.com/photo-1595231712325-9fedecef7575?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D',
+            uri: 'https://assets.basspro.com/image/upload/c_limit,dpr_2.0,f_auto,h_250,q_auto,w_400/c_limit,h_250,w_400/v1/ProductImages/200/master1_100990553_main?pgw=1',
           }}
         />
 
@@ -167,4 +167,4 @@ const Robots = () => {
   );
 };
 
-export default Robots;
+export default Cards;
