@@ -1,19 +1,20 @@
-import React from 'react'
+import React from 'react';
 import {
   Box,
   VStack,
   Button,
-  Image,
   Center,
   ButtonText,
-} from '@gluestack-ui/themed'
+  Icon,
+} from '@gluestack-ui/themed';
 
-import { useRouter } from 'solito/router'
-import GuestLayout from '../../layouts/GuestLayout'
+import { useRouter } from 'solito/router';
+import GuestLayout from '../../layouts/GuestLayout';
+import { SunIcon } from '@gluestack-ui/themed';
 
 // to render login and sign up buttons
 function ActionButtons() {
-  const router = useRouter()
+  const router = useRouter();
 
   return (
     <VStack
@@ -82,46 +83,24 @@ function ActionButtons() {
         </ButtonText>
       </Button>
     </VStack>
-  )
+  );
 }
 
 function HeaderLogo() {
   return (
     <Box alignItems="center" justifyContent="center">
-      <Image
-        h="$10"
-        w="$80"
-        alt="gluestack-ui Pro"
-        resizeMode="contain"
-        source={require('./assets/images/gluestackUiProLogo_web_light.svg')}
-        sx={{
-          '@md': {
-            display: 'flex',
-          },
-        }}
-        display="none"
-      />
-
-      <Image
-        sx={{
-          '@md': {
-            display: 'none',
-          },
-        }}
-        alt="gluestack-ui Pro"
-        display="flex"
-        source={require('./assets/images/gluestackUiProLogo_mobile.png')}
-        w={275}
-        h={141}
-      />
+      <Icon as={SunIcon} color={'$yellow500'} m="$2" w={'$48'} h="$48" />
     </Box>
-  )
+  );
 }
 
 export default function SplashScreen() {
   return (
     // place GluestackUIProvider in your app root accordingly
-    <GuestLayout>
+    <GuestLayout
+      topSafeAreaColor={'primary500'}
+      bottomSafeAreaColor={'primary500'}
+    >
       <Center w="$full" flex={1}>
         <Box
           maxWidth={508}
@@ -141,5 +120,5 @@ export default function SplashScreen() {
         </Box>
       </Center>
     </GuestLayout>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import {
   Center,
   Button,
@@ -32,24 +32,24 @@ import {
   LinkText,
   InputSlot,
   Pressable,
-} from '@gluestack-ui/themed'
+} from '@gluestack-ui/themed';
 
-import { Link } from 'solito/link'
+import { Link } from 'solito/link';
 
-import { useForm, Controller } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { z } from 'zod'
+import { useForm, Controller } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { z } from 'zod';
 
-import { Keyboard } from 'react-native'
+import { Keyboard } from 'react-native';
 
-import { AlertTriangle, EyeIcon, EyeOffIcon } from 'lucide-react-native'
+import { AlertTriangle, EyeIcon, EyeOffIcon } from 'lucide-react-native';
 
-import { GoogleIcon, FacebookIcon } from './assets/Icons/Social'
+import { GoogleIcon, FacebookIcon } from './assets/Icons/Social';
 
-import GuestLayout from '../../layouts/GuestLayout'
+import GuestLayout from '../../layouts/GuestLayout';
 
-import { SafeArea } from 'app/provider/safe-area'
-import { useRouter } from 'solito/router'
+import { SafeArea } from 'app/provider/safe-area';
+import { useRouter } from 'solito/router';
 
 const signInSchema = z.object({
   email: z.string().min(1, 'Email is required').email(),
@@ -64,9 +64,9 @@ const signInSchema = z.object({
       'One special character'
     ),
   rememberme: z.boolean().optional(),
-})
+});
 
-type SignInSchemaType = z.infer<typeof signInSchema>
+type SignInSchemaType = z.infer<typeof signInSchema>;
 
 const SignInForm = () => {
   const {
@@ -76,11 +76,11 @@ const SignInForm = () => {
     reset,
   } = useForm<SignInSchemaType>({
     resolver: zodResolver(signInSchema),
-  })
-  const [isEmailFocused, setIsEmailFocused] = useState(false)
+  });
+  const [isEmailFocused, setIsEmailFocused] = useState(false);
 
-  const router = useRouter()
-  const toast = useToast()
+  const router = useRouter();
+  const toast = useToast();
 
   const onSubmit = (_data: SignInSchemaType) => {
     toast.show({
@@ -90,25 +90,25 @@ const SignInForm = () => {
           <Toast nativeID={id} variant="accent" action="success">
             <ToastTitle>Signed in successfully</ToastTitle>
           </Toast>
-        )
+        );
       },
-    })
-    reset()
-    router.push('/dashboard')
-  }
+    });
+    reset();
+    router.push('/dashboard');
+  };
 
   const handleKeyPress = () => {
-    Keyboard.dismiss()
-    handleSubmit(onSubmit)()
-  }
+    Keyboard.dismiss();
+    handleSubmit(onSubmit)();
+  };
 
-  const [showPassword, setShowPassword] = useState(false)
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleState = () => {
     setShowPassword((showState) => {
-      return !showState
-    })
-  }
+      return !showState;
+    });
+  };
 
   return (
     <>
@@ -124,10 +124,10 @@ const SignInForm = () => {
             rules={{
               validate: async (value) => {
                 try {
-                  await signInSchema.parseAsync({ email: value })
-                  return true
+                  await signInSchema.parseAsync({ email: value });
+                  return true;
                 } catch (error: any) {
-                  return error.message
+                  return error.message;
                 }
               },
             }}
@@ -164,10 +164,10 @@ const SignInForm = () => {
                 try {
                   await signInSchema.parseAsync({
                     password: value,
-                  })
-                  return true
+                  });
+                  return true;
                 } catch (error: any) {
-                  return error.message
+                  return error.message;
                 }
               },
             }}
@@ -233,8 +233,8 @@ const SignInForm = () => {
         <ButtonText fontSize="$sm"> SIGN IN</ButtonText>
       </Button>
     </>
-  )
-}
+  );
+};
 
 function SideContainerWeb() {
   return (
@@ -253,16 +253,16 @@ function SideContainerWeb() {
         alt="gluestack ui pro logo"
       />
     </Center>
-  )
+  );
 }
 
 function MobileHeader() {
-  const router = useRouter()
+  const router = useRouter();
   return (
     <VStack px="$3" mt="$4.5" space="md">
       <Pressable
         onPress={() => {
-          router.push('/')
+          router.push('/');
         }}
       >
         <HStack space="md" alignItems="center">
@@ -296,7 +296,7 @@ function MobileHeader() {
         </Text>
       </VStack>
     </VStack>
-  )
+  );
 }
 
 const Main = () => {
@@ -387,7 +387,7 @@ const Main = () => {
             fontSize="$sm"
             sx={{ _dark: { color: '$textDark400' } }}
           >
-            Don{"'"}t have an account?
+            {`Don't have an account?`}
           </Text>
           <Link href="/signup">
             <LinkText fontSize="$sm">Sign up</LinkText>
@@ -395,8 +395,8 @@ const Main = () => {
         </HStack>
       </Box>
     </SafeArea>
-  )
-}
+  );
+};
 
 export default function SignIn() {
   return (
@@ -409,5 +409,5 @@ export default function SignIn() {
         <Main />
       </Box>
     </GuestLayout>
-  )
+  );
 }

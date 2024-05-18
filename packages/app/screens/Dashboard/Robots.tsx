@@ -72,7 +72,6 @@ const Robots = () => {
           <Button
             px="$4"
             py="$2"
-            fontFamily="$heading"
             mr="$0"
             mb="$3"
             sx={{
@@ -89,7 +88,6 @@ const Robots = () => {
             px="$4"
             py="$2"
             variant="outline"
-            fontFamily="$heading"
             borderColor="$borderLight300"
             $dark-borderColor="$backgroundDark600"
             sx={{
@@ -151,7 +149,6 @@ const Robots = () => {
           <Button
             px="$4"
             py="$2"
-            fontFamily="$heading"
             mr="$0"
             mb="$3"
             sx={{

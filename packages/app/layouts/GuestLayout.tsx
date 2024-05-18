@@ -1,15 +1,16 @@
-import React from 'react'
-import { Box, StatusBar, ScrollView, VStack } from '@gluestack-ui/themed'
-import { useSafeArea } from 'app/provider/safe-area/use-safe-area'
+import React from 'react';
+import { Box, StatusBar, ScrollView, VStack } from '@gluestack-ui/themed';
+import { useSafeArea } from 'app/provider/safe-area/use-safe-area';
 
 type GuestLayoutProps = {
-  children: React.ReactNode
+  children: React.ReactNode;
   //gluestack colors
-  topSafeAreaColor?: keyof import('@gluestack-style/react').GSConfig['tokens']['colors']
-}
+  topSafeAreaColor?: keyof import('@gluestack-style/react').GSConfig['tokens']['colors'];
+  bottomSafeAreaColor?: keyof import('@gluestack-style/react').GSConfig['tokens']['colors'];
+};
 
 export default function GuestLayout(props: GuestLayoutProps) {
-  const safeArea = useSafeArea()
+  const safeArea = useSafeArea();
   return (
     <Box
       sx={{
@@ -63,7 +64,14 @@ export default function GuestLayout(props: GuestLayoutProps) {
           {props.children}
         </VStack>
       </ScrollView>
-      <Box bg="$backgroundLight0" style={{ height: safeArea.bottom }}></Box>
+      <Box
+        bg={
+          props?.bottomSafeAreaColor
+            ? `$${props?.bottomSafeAreaColor}`
+            : '$backgroundLight0'
+        }
+        style={{ height: safeArea.bottom }}
+      ></Box>
     </Box>
-  )
+  );
 }

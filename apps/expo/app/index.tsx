@@ -1,15 +1,15 @@
 // index app
-import React, { useState } from 'react'
-import SplashScreen from '@gluestack/app/Login/SplashScreen'
-import { useEffect } from 'react'
+import React, { useState } from 'react';
+import SplashScreen from '@gluestack/app/Login/SplashScreen';
+import { useEffect } from 'react';
 
 const App = () => {
-  const [first, setfirst] = useState(0)
+  const [first, setfirst] = useState(0);
   useEffect(() => {
-    console.log('useEffect')
-  }, [first])
+    console.log('useEffect');
+  }, [first]);
 
-  return <SplashScreen />
-}
+  return <SplashScreen />;
+};
 
-export default App
+export default App;

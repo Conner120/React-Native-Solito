@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import {
   Button,
   FormControl,
@@ -20,26 +20,26 @@ import {
   ArrowLeftIcon,
   Heading,
   Center,
-} from '@gluestack-ui/themed'
+} from '@gluestack-ui/themed';
 
-import { Link } from 'solito/link'
+import { Link } from 'solito/link';
 
-import { useForm, Controller } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { z } from 'zod'
+import { useForm, Controller } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
+import { z } from 'zod';
 
-import { Keyboard } from 'react-native'
+import { Keyboard } from 'react-native';
 
-import { AlertTriangle } from 'lucide-react-native'
+import { AlertTriangle } from 'lucide-react-native';
 
-import GuestLayout from '../../layouts/GuestLayout'
-import { useRouter } from 'solito/router'
+import GuestLayout from '../../layouts/GuestLayout';
+import { useRouter } from 'solito/router';
 
 const forgotPasswordSchema = z.object({
   email: z.string().min(1, 'Email is required').email(),
-})
+});
 
-type forgotPasswordSchemaType = z.infer<typeof forgotPasswordSchema>
+type forgotPasswordSchemaType = z.infer<typeof forgotPasswordSchema>;
 
 function Header() {
   return (
@@ -60,7 +60,7 @@ function Header() {
         Forgot Password
       </Text>
     </HStack>
-  )
+  );
 }
 
 function SideContainerWeb() {
@@ -87,7 +87,7 @@ function SideContainerWeb() {
         alt="Alternate Text"
       />
     </Center>
-  )
+  );
 }
 function MobileScreenImage() {
   return (
@@ -142,7 +142,7 @@ function MobileScreenImage() {
         alt="Forgot Password"
       />
     </Center>
-  )
+  );
 }
 
 export default function ForgotPassword() {
@@ -153,15 +153,15 @@ export default function ForgotPassword() {
     reset,
   } = useForm<forgotPasswordSchemaType>({
     resolver: zodResolver(forgotPasswordSchema),
-  })
-  const [isEmailFocused, setIsEmailFocused] = useState(false)
+  });
+  const [isEmailFocused, setIsEmailFocused] = useState(false);
 
-  const router = useRouter()
-  const toast = useToast()
+  const router = useRouter();
+  const toast = useToast();
 
   const onSubmit = (_data: forgotPasswordSchemaType) => {
-    router.push('/verify-otp')
-    reset()
+    router.push('/verify-otp');
+    reset();
     toast.show({
       placement: 'bottom right',
       render: ({ id }) => {
@@ -169,16 +169,16 @@ export default function ForgotPassword() {
           <Toast nativeID={id} variant="accent" action="success">
             <ToastTitle>OTP Send Successfully</ToastTitle>
           </Toast>
-        )
+        );
       },
-    })
-    reset()
-  }
+    });
+    reset();
+  };
 
   const handleKeyPress = () => {
-    Keyboard.dismiss()
-    handleSubmit(onSubmit)()
-  }
+    Keyboard.dismiss();
+    handleSubmit(onSubmit)();
+  };
 
   return (
     <GuestLayout>
@@ -241,7 +241,7 @@ export default function ForgotPassword() {
               }}
             >
               Not to worry! Enter email address associated with your account and
-              we'll send a link to reset your password.
+              we&#39;ll send a link to reset your password.
             </Text>
           </VStack>
 
@@ -259,10 +259,10 @@ export default function ForgotPassword() {
                   try {
                     await forgotPasswordSchema.parseAsync({
                       email: value,
-                    })
-                    return true
+                    });
+                    return true;
                   } catch (error: any) {
-                    return error.message
+                    return error.message;
                   }
                 },
               }}
@@ -294,5 +294,5 @@ export default function ForgotPassword() {
         </Box>
       </VStack>
     </GuestLayout>
-  )
+  );
 }
