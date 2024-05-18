@@ -1200,7 +1200,7 @@ exports[`<Card /> has 1 child 1`] = `
             }
             sx={{}}
           >
-            Start Robot Manager
+           Dahboard
           </Text>
         </View>
       </View>

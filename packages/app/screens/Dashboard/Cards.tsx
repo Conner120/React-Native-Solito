@@ -159,7 +159,7 @@ const Cards = () => {
               },
             }}
           >
-            <ButtonText size="sm">Start Robot Manager</ButtonText>
+            <ButtonText size="sm">Start Dashboard</ButtonText>
           </Button>
         </Box>
       </Card>

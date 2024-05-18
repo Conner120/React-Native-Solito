@@ -10,7 +10,7 @@ export default function App() {
       <Stack>
         <Stack.Screen
           name="index"
-          options={{ headerShown: true, title: 'My Robot Heards' }}
+          options={{ headerShown: true, title: 'My Dashboard' }}
         />
       </Stack>
     </Provider>
