@@ -1,6 +1,7 @@
 import { View, Text, Button } from 'react-native';
 import React from 'react';
-import Card from '@gluestack/app/Dashboard/Cards';
+import { useRouter } from 'expo-router';
+import Card from '@gluestack/app/Dashboard/Robots';
 
 const index = (props: { navigation: any }) => {
   return (
