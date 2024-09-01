@@ -1,39 +1,49 @@
 import { config as defaultConfig } from '@gluestack-ui/config';
 import { createConfig } from '@gluestack-ui/themed';
-
 const config = createConfig({
   ...defaultConfig,
   tokens: {
     ...defaultConfig.tokens,
+
     colors: {
       ...defaultConfig.tokens.colors,
       white: '#FFFFFF',
       black: '#000000',
-      primary0: '#F5F3FF',
-      primary50: '#F5F3FF',
-      primary100: '#DDD6FE',
-      primary200: '#C4B5FD',
-      primary300: '#A78BFA',
-      primary400: '#8B5CF6',
-      primary500: '#7C3AED',
-      primary600: '#6D28D9',
-      primary700: '#5B21B6',
-      primary800: '#4C1D95',
-      primary900: '#441e7d',
-      primary950: '#441E7D',
+      primary0: '#fff1e5',
+
+      primary50: '#ffd6b3',
+
+      primary100: '#fbb80',
+
+      primary200: '#dda659',
+
+      primary300: '#d96500',
+
+      primary400: '#ff7d0d',
+
+      primary500: '#ff851b',
+      primary600: '#D96500',
+
+      primary700: '#FFA659',
+
+      primary800: '#401E00',
+
+      primary900: '#401E00',
+
+      primary950: '#401E00',
 
       secondary0: '#FCFCFC',
-      secondary50: '#f9fafb',
-      secondary100: '#f3f4f6',
-      secondary200: '#e4e7eb',
-      secondary300: '#d1d5da',
-      secondary400: '#9ca3af',
-      secondary500: '#6b7280',
-      secondary600: '#4b5563',
-      secondary700: '#374151',
-      secondary800: '#1f2937',
-      secondary900: '#111827',
-      secondary950: '#171717',
+      secondary50: '#C8D9F6',
+      secondary100: '#A4C0F0',
+      secondary200: '#80A7EA',
+      secondary300: '#5B8EE4',
+      secondary400: '#3774DD',
+      secondary500: '#1E55B3',
+      secondary600: '#1B4EA4',
+      secondary700: '#153C7F',
+      secondary800: '#0F2B5B',
+      secondary900: '#091A37',
+      secondary950: '#030912',
 
       backgroundDark0: '#FFFFFF',
       backgroundDark50: '#f9fafb',
@@ -229,7 +239,6 @@ const config = createConfig({
     },
   },
 } as const);
-
 export { config };
 
 // Get the type of Config

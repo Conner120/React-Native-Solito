@@ -7,6 +7,7 @@ type GuestLayoutProps = {
   //gluestack colors
   topSafeAreaColor?: keyof import('@gluestack-style/react').GSConfig['tokens']['colors'];
   bottomSafeAreaColor?: keyof import('@gluestack-style/react').GSConfig['tokens']['colors'];
+  webBgColor?: keyof import('@gluestack-style/react').GSConfig['tokens']['colors'];
 };
 
 export default function GuestLayout(props: GuestLayoutProps) {
@@ -42,8 +43,17 @@ export default function GuestLayout(props: GuestLayoutProps) {
           justifyContent: 'center',
         }}
         sx={{
-          '@base': { _light: { bg: '$primary500' } },
-          '@md': { _light: { bg: '$primary900' }, p: '$8' },
+          '@base': {
+            _light: {
+              bg: props?.webBgColor ? `$${props?.webBgColor}` : '$secondary500',
+            },
+          },
+          '@md': {
+            _light: {
+              bg: props?.webBgColor ? `$${props?.webBgColor}` : '$secondary500',
+            },
+            p: '$8',
+          },
           _dark: { bg: '$backgroundDark900' },
         }}
         bounces={false}

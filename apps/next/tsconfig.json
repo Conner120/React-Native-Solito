@@ -15,8 +15,14 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "paths":{"@gluestack/app/*":["../../packages/app/screens/*"]},
+    "paths": { "@gluestack/app/*": ["../../packages/app/screens/*"] }
   },
-  "include": ["next-env.d.ts", "app-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": [
+    "next-env.d.ts",
+    "app-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "../../packages/app/features/auth/init.web.ts"
+  ],
   "exclude": ["node_modules"]
 }

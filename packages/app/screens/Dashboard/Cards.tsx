@@ -29,6 +29,7 @@ const Cards = () => {
       <Card p="$5" borderRadius="$lg">
         <StyledImage
           mb="$6"
+          aria-label="Fashion Clothing"
           h={240}
           alt="Fashion Clothing"
           source={{
@@ -110,6 +111,7 @@ const Cards = () => {
       <Card p="$5" borderRadius="$lg">
         <StyledImage
           mb="$6"
+          aria-label="Fashion Clothing"
           h={240}
           alt="Fashion Clothing"
           source={{

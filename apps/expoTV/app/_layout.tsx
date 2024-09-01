@@ -5,6 +5,15 @@ import { StatusBar } from 'expo-status-bar';
 import { getCurrentUser, getIdToken } from 'app/features/auth';
 
 export default function App() {
+  const router = useRouter();
+  useEffect(() => {
+    getIdToken().then((token) => {
+      console.log('Token', token);
+      if (token) {
+        router.replace('dashboards');
+      }
+    });
+  }, []);
   return (
     <Provider>
       <StatusBar />

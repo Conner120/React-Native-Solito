@@ -1,21 +1,17 @@
 import React from 'react';
+import { Box, VStack, Center, ButtonText, Image } from '@gluestack-ui/themed';
 import {
-  Box,
-  VStack,
-  Button,
-  Center,
-  ButtonText,
-  Icon,
-} from '@gluestack-ui/themed';
-
+  Button as NativeButton,
+  Touchable,
+  TouchableOpacity,
+} from 'react-native';
 import { useRouter } from 'solito/router';
 import GuestLayout from '../../layouts/GuestLayout';
-import { SunIcon } from '@gluestack-ui/themed';
+import Button from '../../features/components/CustomButton';
 
 // to render login and sign up buttons
 function ActionButtons() {
   const router = useRouter();
-
   return (
     <VStack
       space="xs"
@@ -26,6 +22,7 @@ function ActionButtons() {
         },
       }}
     >
+      <NativeButton title="Login" onPress={() => router.push('/login')} />
       <Button
         sx={{
           ':hover': {
@@ -44,26 +41,26 @@ function ActionButtons() {
           LOGIN
         </ButtonText>
       </Button>
-
-      <Button
-        sx={{
-          ':hover': {
-            bg: '$backgroundLight0',
-            _text: {
-              color: '$primary500',
+      <Box my={'$4'}>
+        <Button
+          sx={{
+            ':hover': {
+              bg: '$backgroundLight0',
+              _text: {
+                color: '$primary500',
+              },
             },
-          },
-        }}
-        my="$4"
-        size="md"
-        variant="outline"
-        onPress={() => router.push('/signup')}
-        borderColor="$borderLight0"
-      >
-        <ButtonText textDecorationLine="none" color="$textLight50">
-          SIGN UP
-        </ButtonText>
-      </Button>
+          }}
+          size="md"
+          variant="outline"
+          onPress={() => router.push('/signup')}
+          borderColor="$borderLight0"
+        >
+          <ButtonText textDecorationLine="none" color="$textLight50">
+            SIGN UP
+          </ButtonText>
+        </Button>
+      </Box>
       <Button
         sx={{
           ':hover': {
@@ -89,7 +86,13 @@ function ActionButtons() {
 function HeaderLogo() {
   return (
     <Box alignItems="center" justifyContent="center">
-      <Icon as={SunIcon} color={'$yellow500'} m="$2" w={'$48'} h="$48" />
+      <Image
+        size="2xl"
+        source={{
+          uri: '/logoHigh.png',
+        }}
+        alt="Gluestack Logo"
+      />
     </Box>
   );
 }
@@ -98,8 +101,8 @@ export default function SplashScreen() {
   return (
     // place GluestackUIProvider in your app root accordingly
     <GuestLayout
-      topSafeAreaColor={'primary500'}
-      bottomSafeAreaColor={'primary500'}
+      topSafeAreaColor={'secondary500'}
+      bottomSafeAreaColor={'secondary500'}
     >
       <Center w="$full" flex={1}>
         <Box
@@ -109,7 +112,7 @@ export default function SplashScreen() {
           sx={{
             '@md': {
               px: '$8',
-              bg: '$primary500',
+              bg: '$secondary500',
             },
           }}
           px="$4"

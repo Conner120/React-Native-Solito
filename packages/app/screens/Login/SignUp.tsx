@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import {
   Button,
   Checkbox,
@@ -31,21 +31,21 @@ import {
   ArrowLeftIcon,
   InputField,
   InputSlot,
-} from '@gluestack-ui/themed'
-import { Link } from 'solito/link'
+} from '@gluestack-ui/themed';
+import { Link } from 'solito/link';
 
-import { Controller, useForm } from 'react-hook-form'
+import { Controller, useForm } from 'react-hook-form';
 
-import { z } from 'zod'
-import { zodResolver } from '@hookform/resolvers/zod'
+import { z } from 'zod';
+import { zodResolver } from '@hookform/resolvers/zod';
 
-import { AlertTriangle, EyeIcon, EyeOffIcon } from 'lucide-react-native'
+import { AlertTriangle, EyeIcon, EyeOffIcon } from 'lucide-react-native';
 
-import { FacebookIcon, GoogleIcon } from './assets/Icons/Social'
-import { Keyboard } from 'react-native'
+import { FacebookIcon, GoogleIcon } from './assets/Icons/Social';
+import { Keyboard } from 'react-native';
 
-import GuestLayout from '../../layouts/GuestLayout'
-import { useSafeArea } from 'app/provider/safe-area/use-safe-area'
+import GuestLayout from '../../layouts/GuestLayout';
+import { useSafeArea } from 'app/provider/safe-area/use-safe-area';
 
 const signUpSchema = z.object({
   email: z.string().min(1, 'Email is required').email(),
@@ -70,8 +70,8 @@ const signUpSchema = z.object({
       'One special character'
     ),
   rememberme: z.boolean().optional(),
-})
-type SignUpSchemaType = z.infer<typeof signUpSchema>
+});
+type SignUpSchemaType = z.infer<typeof signUpSchema>;
 function SideContainerWeb() {
   return (
     <Center
@@ -88,10 +88,10 @@ function SideContainerWeb() {
         w="$80"
         alt="gluestack-ui Pro"
         resizeMode="contain"
-        source={require('./assets/images/gluestackUiProLogo_web_light.svg')}
+        source={require('./assets/images/my-family-movies-high-resolution-logo-transparent.svg')}
       />
     </Center>
-  )
+  );
 }
 function MobileHeader() {
   return (
@@ -129,7 +129,7 @@ function MobileHeader() {
         </Text>
       </VStack>
     </VStack>
-  )
+  );
 }
 const SignUpForm = () => {
   const {
@@ -139,13 +139,13 @@ const SignUpForm = () => {
     reset,
   } = useForm<SignUpSchemaType>({
     resolver: zodResolver(signUpSchema),
-  })
-  const [isEmailFocused, setIsEmailFocused] = useState(false)
-  const [pwMatched, setPwMatched] = useState(false)
-  const toast = useToast()
+  });
+  const [isEmailFocused, setIsEmailFocused] = useState(false);
+  const [pwMatched, setPwMatched] = useState(false);
+  const toast = useToast();
   const onSubmit = (_data: SignUpSchemaType) => {
     if (_data.password === _data.confirmpassword) {
-      setPwMatched(true)
+      setPwMatched(true);
       toast.show({
         placement: 'bottom right',
         render: ({ id }) => {
@@ -153,10 +153,10 @@ const SignUpForm = () => {
             <Toast nativeID={id} variant="accent" action="success">
               <ToastTitle>Signed up successfully</ToastTitle>
             </Toast>
-          )
+          );
         },
-      })
-      reset()
+      });
+      reset();
     } else {
       toast.show({
         placement: 'bottom right',
@@ -165,28 +165,28 @@ const SignUpForm = () => {
             <Toast nativeID={id} action="error">
               <ToastTitle>Passwords do not match</ToastTitle>
             </Toast>
-          )
+          );
         },
-      })
+      });
     }
     // Implement your own onSubmit and navigation logic here.
-  }
+  };
   const handleKeyPress = () => {
-    Keyboard.dismiss()
-    handleSubmit(onSubmit)()
-  }
-  const [showPassword, setShowPassword] = useState(false)
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false)
+    Keyboard.dismiss();
+    handleSubmit(onSubmit)();
+  };
+  const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const handleState = () => {
     setShowPassword((showState) => {
-      return !showState
-    })
-  }
+      return !showState;
+    });
+  };
   const handleConfirmPwState = () => {
     setShowConfirmPassword((showState) => {
-      return !showState
-    })
-  }
+      return !showState;
+    });
+  };
   return (
     <>
       <VStack justifyContent="space-between">
@@ -201,10 +201,10 @@ const SignUpForm = () => {
             rules={{
               validate: async (value) => {
                 try {
-                  await signUpSchema.parseAsync({ email: value })
-                  return true
+                  await signUpSchema.parseAsync({ email: value });
+                  return true;
                 } catch (error: any) {
-                  return error.message
+                  return error.message;
                 }
               },
             }}
@@ -240,10 +240,10 @@ const SignUpForm = () => {
                 try {
                   await signUpSchema.parseAsync({
                     password: value,
-                  })
-                  return true
+                  });
+                  return true;
                 } catch (error: any) {
-                  return error.message
+                  return error.message;
                 }
               },
             }}
@@ -283,10 +283,10 @@ const SignUpForm = () => {
                 try {
                   await signUpSchema.parseAsync({
                     password: value,
-                  })
-                  return true
+                  });
+                  return true;
                 } catch (error: any) {
-                  return error.message
+                  return error.message;
                 }
               },
             }}
@@ -384,8 +384,8 @@ const SignUpForm = () => {
         <ButtonText fontSize="$sm"> SIGN UP</ButtonText>
       </Button>
     </>
-  )
-}
+  );
+};
 function SignUpFormComponent() {
   return (
     <>
@@ -423,7 +423,7 @@ function SignUpFormComponent() {
           Sign up to continue
         </Heading>
         <SignUpForm />
-        <HStack my="$4" space="md" alignItems="center" justifyContent="center">
+        {/* <HStack my="$4" space="md" alignItems="center" justifyContent="center">
           <Divider
             w="$2/6"
             bg="$backgroundLight200"
@@ -464,7 +464,7 @@ function SignUpFormComponent() {
               <ButtonIcon as={GoogleIcon} size="md" />
             </Button>
           </Link>
-        </HStack>
+        </HStack> */}
         <HStack
           space="xs"
           alignItems="center"
@@ -488,11 +488,14 @@ function SignUpFormComponent() {
         </HStack>
       </Box>
     </>
-  )
+  );
 }
 export default function SignUp() {
   return (
-    <GuestLayout topSafeAreaColor={'primary500'}>
+    <GuestLayout
+      topSafeAreaColor={'secondary500'}
+      bottomSafeAreaColor={'secondary500'}
+    >
       <Box
         sx={{
           '@md': {
@@ -508,5 +511,5 @@ export default function SignUp() {
         <SignUpFormComponent />
       </Box>
     </GuestLayout>
-  )
+  );
 }

@@ -50,24 +50,22 @@ import GuestLayout from '../../layouts/GuestLayout';
 
 import { SafeArea } from 'app/provider/safe-area';
 import { useRouter } from 'solito/router';
+import { signInWithEmailAndPassword } from '../../features/auth/init.native';
 
 const signInSchema = z.object({
   email: z.string().min(1, 'Email is required').email(),
-  password: z
-    .string()
-    .min(6, 'Must be at least 8 characters in length')
-    .regex(new RegExp('.*[A-Z].*'), 'One uppercase character')
-    .regex(new RegExp('.*[a-z].*'), 'One lowercase character')
-    .regex(new RegExp('.*\\d.*'), 'One number')
-    .regex(
-      new RegExp('.*[`~<>?,./!@#$%^&*()\\-_+="\'|{}\\[\\];:\\\\].*'),
-      'One special character'
-    ),
+  password: z.string().min(6, 'Must be at least 8 characters in length'),
+  // .regex(new RegExp('.*[A-Z].*'), 'One uppercase character')
+  // .regex(new RegExp('.*[a-z].*'), 'One lowercase character')
+  // .regex(new RegExp('.*\\d.*'), 'One number')
+  // .regex(
+  //   new RegExp('.*[`~<>?,./!@#$%^&*()\\-_+="\'|{}\\[\\];:\\\\].*'),
+  //   'One special character'
+  // ),
   rememberme: z.boolean().optional(),
 });
 
 type SignInSchemaType = z.infer<typeof signInSchema>;
-
 const SignInForm = () => {
   const {
     control,
@@ -94,7 +92,16 @@ const SignInForm = () => {
       },
     });
     reset();
-    router.push('/dashboard');
+    signInWithEmailAndPassword(_data.email, _data.password)
+      .then((user) => {
+        console.log(user);
+        if (user) {
+          router.replace('/dashboards');
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   const handleKeyPress = () => {
@@ -213,6 +220,7 @@ const SignInForm = () => {
             my="$5"
             size="sm"
             value="Remember me"
+            aria-label="Remember me and keep me logged in"
             isChecked={value}
             onChange={onChange}
             alignSelf="flex-start"
@@ -237,19 +245,20 @@ const SignInForm = () => {
 };
 
 function SideContainerWeb() {
+  console.log('SideContainerWeb');
   return (
     <Center
       flex={1}
-      bg="$primary500"
+      bg="$secondary500"
       sx={{
-        _dark: { bg: '$primary500' },
+        _dark: { bg: '$secondary500' },
       }}
     >
       <Image
-        w="$80"
-        h="$10"
+        w={512}
+        h={512}
         resizeMode="contain"
-        source={require('./assets/images/gluestackUiProLogo_web_light.svg')}
+        source={require('./assets/images/my-family-movies-high-resolution-logo-transparent.svg')}
         alt="gluestack ui pro logo"
       />
     </Center>
@@ -287,7 +296,7 @@ function MobileHeader() {
         <Text
           fontSize="$md"
           fontWeight="normal"
-          color="$primary300"
+          color="$secondary300"
           sx={{
             _dark: { color: '$textDark400' },
           }}
@@ -334,48 +343,6 @@ const Main = () => {
           Sign in to continued
         </Heading>
         <SignInForm />
-        <HStack my="$4" space="md" alignItems="center" justifyContent="center">
-          <Divider
-            w="$2/6"
-            bg="$backgroundLight200"
-            sx={{ _dark: { bg: '$backgroundDark700' } }}
-          />
-          <Text
-            fontWeight="$medium"
-            color="$textLight400"
-            sx={{ _dark: { color: '$textDark300' } }}
-          >
-            or
-          </Text>
-          <Divider
-            w="$2/6"
-            bg="$backgroundLight200"
-            sx={{ _dark: { bg: '$backgroundDark700' } }}
-          />
-        </HStack>
-        <HStack
-          mt="$6"
-          sx={{
-            '@md': {
-              mt: '$4',
-            },
-          }}
-          mb="$9"
-          justifyContent="center"
-          alignItems="center"
-          space="lg"
-        >
-          <Link href="#">
-            <Button action="secondary" variant="link" onPress={() => {}}>
-              <ButtonIcon as={FacebookIcon} size="md" />
-            </Button>
-          </Link>
-          <Link href="#">
-            <Button action="secondary" variant="link" onPress={() => {}}>
-              <ButtonIcon as={GoogleIcon} size="md" />
-            </Button>
-          </Link>
-        </HStack>
         <HStack
           space="xs"
           alignItems="center"
@@ -400,7 +367,11 @@ const Main = () => {
 
 export default function SignIn() {
   return (
-    <GuestLayout topSafeAreaColor={'primary500'}>
+    <GuestLayout
+      topSafeAreaColor={'primary500'}
+      webBgColor={'primary500'}
+      bottomSafeAreaColor={'primary500'}
+    >
       <Box display="none" sx={{ '@md': { display: 'flex' } }} flex={1}>
         <SideContainerWeb />
       </Box>
